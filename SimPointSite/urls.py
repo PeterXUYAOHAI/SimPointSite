@@ -17,6 +17,7 @@ from django.conf.urls import include,url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^FastLSH/', include('FastLSH.urls')),
     url(r'^polls/', include('polls.urls')),
     url(r'^webapp/', include('webapp.urls')),
     url(r'^personal/', include('personal.urls')),
