@@ -14,9 +14,6 @@
 
 
 
-
-
-
 {% load staticfiles %}
 <div class="col-sm-2">
 
@@ -28,45 +25,45 @@
 
   <div class="form-group">
     <label for="RunName">Name this RUN</label>
-    <input type="text" class="form-control" id="RunName" placeholder="first run">
+    <input type="text" name = "RunName" class="form-control" id="RunName" placeholder="first run">
   </div>
 
 	<div class="form-group">
     <label for="phN">N: number of points(lines,rows) in the dataset</label>
-    <input type="number" class="form-control" id="phN" placeholder="1000">
+    <input type="number" name = "phN" class="form-control" id="phN" placeholder="1000">
   </div>
 
 	<div class="form-group">
     <label for="phQ">Q:  number of points(lines,rows) in the queryset</label>
-    <input type="number" class="form-control" id="phQ" placeholder="1000">
+    <input type="number" name = "phQ" class="form-control" id="phQ" placeholder="1000">
   </div>
 	<div class="form-group">
     <label for="phD">D: number of dimensions (columns)</label>
-    <input type="number" class="form-control" id="phD" placeholder="56">
+    <input type="number" name = "phD" class="form-control" id="phD" placeholder="56">
   </div>
 	<div class="form-group">
     <label for="phL">L: number of group hash</label>
-    <input type="number" class="form-control" id="phL" placeholder="200">
+    <input type="number" name = "phL" class="form-control" id="phL" placeholder="200">
   </div>
 
 	<div class="form-group">
-    <label for="phk">K: number of hash functions in each group hash</label>
-    <input type="number" class="form-control" id="phK" placeholder="1">
+    <label for="phK">K: number of hash functions in each group hash</label>
+    <input type="number" name = "phK" class="form-control" id="phK" placeholder="1">
   </div>
 
 	<div class="form-group">
-    <label for="phN">W: bucket width</label>
-    <input type="number" class="form-control" id="phW" placeholder="1.2">
+    <label for="phW">W: bucket width</label>
+    <input type="number" name = "phW" class="form-control" id="phW" placeholder="1.2">
   </div>
 
 	<div class="form-group">
     <label for="phT">T: threshold</label>
-    <input type="number" class="form-control" id="phT" placeholder="100">
+    <input type="number" name = "phT" class="form-control" id="phT" placeholder="100">
   </div>
 
   <div class="form-group">
     <label for="computeMode">Compute Mode</label>
-    <select class="form-control" id="computeMode">
+    <select class="form-control" name = "computeMode" id="computeMode">
       <option>0 - normal</option>
       <option>1 - quick</option>
     </select>
@@ -75,7 +72,7 @@
 
   <div class="form-group">
     <label for="threadMode">Thread Mode</label>
-    <select class="form-control" id="threadMode">
+    <select class="form-control" name = "threadMode" id="threadMode">
       <option>0 - singleThread</option>
       <option>1 - openMP</option>
       <option>2 - stdthread</option>
@@ -83,28 +80,19 @@
     </select>
   </div>
 
-
-	<div class="form-group">
-    <label for="useHDFS">useHDFS</label>
-    <select class="form-control" id="useHDFS">
-      <option>NO</option>
-      <option>YES</option>
-    </select>
-  </div>
-
   <div class="form-group">
     <label for="ipathN">Input Path for datasetN:</label>
-    <input type="text" class="form-control" id="ipathN" placeholder="./dataset1000NoIndex.csv">
+    <input type="text" class="form-control" name = "ipathN" id="ipathN" placeholder="./dataset1000NoIndex.csv">
   </div>
 
 	<div class="form-group">
     <label for="ipathQ">Input Path for datasetQ:</label>
-    <input type="text" class="form-control" id="ipathQ" placeholder="./dataset1000NoIndex.csv">
+    <input type="text" class="form-control" name = "ipathQ" id="ipathQ" placeholder="./dataset1000NoIndex.csv">
   </div>
 
 	<div class="form-group">
     <label for="opath">Output Path:</label>
-    <input type="text" class="form-control" id="opath" placeholder="candidate.csv">
+    <input type="text" class="form-control" name = "opath" id="opath" placeholder="candidate.csv">
   </div>
 
 
